@@ -16,7 +16,7 @@ table=$2
 echo "USE medlemmer;"
 echo "DROP TABLE IF EXISTS $table;"
 echo "SET character_set_client = utf8mb4;"
-echo "CREATE TABLE $table (Teknanr int(11), Ansattnr int(11), Etternavn varchar(25), Fornavn varchar(25), Epost varchar(50), Mobil varchar(20), Eksamen datetime);"
+echo "CREATE TABLE $table (Teknamedlem int(11), Ansattnr int(11), Etternavn varchar(25), Fornavn varchar(25), Epost varchar(50), Mobil varchar(20), Eksamen datetime);"
 n=0
 
 while read -r line; do

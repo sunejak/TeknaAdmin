@@ -20,7 +20,7 @@ lastName="Etternavn"
 #
 # create an array with the column names
 #
-names=($(head -1 $filename | tr -d '.' | tr ';' ' '))
+names=($(head -1 $filename | tr -d ' ' | tr -d '.' | tr ';' ' '))
 #
 # loop through the names to find the indexes we are looking for
 #

@@ -63,10 +63,10 @@ echo "CREATE TABLE $table ($companyName varchar(25), $emplyeeNumber int(11), $la
 n=0
 
 while read -r line; do
-  firmanavn=$(echo $line | cut -d';' -f$companyNameColumn)
-  ansattnr=$(echo $line | cut -d';' -f$employeeNumberColumn)
-  etternavn=$(echo $line | cut -d';' -f$lastNameColumn)
-  fornavn=$(echo $line | cut -d';' -f$firstNameColumn)
+  firmanavn=$(echo $line | cut -d',' -f$companyNameColumn)
+  ansattnr=$(echo $line | cut -d',' -f$employeeNumberColumn)
+  etternavn=$(echo $line | cut -d',' -f$lastNameColumn)
+  fornavn=$(echo $line | cut -d',' -f$firstNameColumn)
 #
 # employees without an employee number are skipped.
 #
